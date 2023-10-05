@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style></style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Producrs - Fashion Connect</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Page loader container -->
+    <div class="loader-container" id="loader">
+      <div class="loader"></div>
+    </div>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="images/Hannah (1).png" width="125px"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="images/cart.png" width="30px" height="30px"
+        /></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+    <!-- -------------------cart items details----------------- -->
+    <div class="samll-container about-page">
+      <div class="about">
+        <center style="font-size: 48px; font-weight: bold">About us</center>
+        <br />
+        <p>
+          Here we are providing the best website for you.In our website all
+          sports product is there you can purchase the product and share the
+          reviews with us.
+        </p>
+        <br />
+        <p>
+          Our Purpose is to Sustaiinably make the pleasure and Benefits of
+          Sports Accessfible to the Many
+        </p>
+        <br />
+        <p>
+          Here our Website <b>Designer</b> is <b>Punnet Gore</b>. He did Great
+          Design for our website and he is not spoted is work, he is working
+          some more unique design and animation for our website. On behalf of
+          company <b>Fashion Connect </b>We Appreciate and Thankful for there
+          work.
+        </p>
+        <br />
+        <p>
+          Here our Website <b>Logo Designer</b> is <b>Punit Ramnani</b>. He didi
+          is Greate work for our website logo and He is more work on our website
+          logo. on Behalf of the Company We Appreciate and Thankful for there
+          work.
+        </p>
+        <br />
+        <p>
+          Here Our last and Most important <b>Developer</b> of our website
+          <b>Dhiraj Rochwani</b>.As per the <b>Ui/Ux design</b> and
+          <b>Website logo</b> the developer work as per there and he added some
+          more creative animation in the website for better look. We also
+          Thankful and Appreciate him for there Great work.
+        </p>
+        <br />
+        <p></p>
+      </div>
+    </div>
+
+    <!-- ---------Footer--------- -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App For Android and Ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/Hannah (1).png" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benefites of
+              Sports Accessfible to the Many .
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Link</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affilate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2020 - Easy Tutorials</p>
+      </div>
+    </div>
+    <!-- -----------js for toggle menu------------- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "2000px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+      // Simulate an AJAX request (you can replace this with an actual AJAX call)
+      setTimeout(function () {
+        // Hide the loader and display the content
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").classList.remove("loaded");
+      }, 3000); // Simulated delay of 3 seconds
+    </script>
+  </body>
+</html>
